@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Form Elements</title>
+  <link rel="icon" href="html.ico" width="32" height="32">
+   <style>
+        body {
+            background-color: white; /* لون الخلفية أبيض */
+            color: black; /* لون النص أسود */
+            font-family: Arial, sans-serif; /* اختيار خط مناسب */
+        }
+
+        h1, h2 {
+            color: black; /* لون العناوين أسود */
+        }
+
+        .button {
+            background: linear-gradient(45deg, #003366, #66b2ff); /* تدرج من الأزرق الداكن إلى الأزرق الفاتح */
+            color: white; /* لون النص أبيض */
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-right: 5px;
+            display: inline-block;
+            border: none;
+        }
+
+        .button:hover {
+            background: linear-gradient(45deg, #66b2ff, #003366); /* عكس التدرج عند التمرير */
+        }
+
+        #form {
+            max-width: 400px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f9f9f9;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+
+        input, select {
+            width: 100%;
+            padding: 10px;
+            margin: 8px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+
+        button {
+            background: linear-gradient(45deg, #003366, #66b2ff); /* تدرج من الأزرق الداكن إلى الأزرق الفاتح */
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: linear-gradient(45deg, #66b2ff, #003366); /* عكس التدرج عند التمرير */
+        }
+    </style>​  <style>
+    /* تنسيق الروابط كأزرار بتدرج لوني */
+    .button {
+      display: inline-block;
+      padding: 10px 20px;
+      margin: 5px;
+      color: white;
+      background: linear-gradient(45deg, #0D47A1, #64B5F6); /* تدرج لوني من الأزرق الداكن إلى الأزرق الفاتح */
+      text-decoration: none;
+      border-radius: 5px;
+      border: none;
+      font-size: 16px;
+      transition: background 0.3s;
+    }
+    
+
+    /* تأثير عند تمرير الماوس */
+    .button:hover {
+      background: linear-gradient(45deg, #1565C0, #90CAF9); /* تدرج لوني أخف عند التمرير */
+    }
+
+    /* تنسيق النموذج */
+    #form {
+      width: 300px;
+      margin: auto;
+      padding: 20px;
+      border: 1px solid #ccc;
+      border-radius: 10px;
+    }
+
+    label {
+      display: block;
+      margin: 10px 0 5px;
+    }
+
+    input[type="submit"], input[type="reset"] {
+      width: 100%;
+      padding: 10px;
+      margin-top: 10px;
+      cursor: pointer;
+      background: linear-gradient(45deg, #0D47A1, #64B5F6); /* تدرج لوني للأزرار */
+      color: white;
+      border: none;
+      border-radius: 5px;
+      font-size: 16px;
+      transition: background 0.3s;
+    }
+
+    input[type="submit"]:hover, input[type="reset"]:hover {
+      background: linear-gradient(45deg, #1565C0, #90CAF9); /* تأثير أخف عند التمرير */
+    }
+</style>​  <style>
+    /* تنسيق الروابط كأزرار بتدرج لوني */
+    .button {
+      display: inline-block;
+      padding: 10px 20px;
+      margin: 5px;
+      color: white;
+      background: linear-gradient(45deg, #0D47A1, #64B5F6); /* تدرج لوني من الأزرق الداكن إلى الأزرق الفاتح */
+      text-decoration: none;
+      border-radius: 5px;
+      border: none;
+      font-size: 16px;
+      transition: background 0.3s;
+    }
+
+    /* تأثير عند تمرير الماوس */
+    .button:hover {
+      background: linear-gradient(45deg, #1565C0, #90CAF9); /* تدرج لوني أخف عند التمرير */
+    }
+
+    /* تنسيق النموذج */
+    #form {
+      width: 300px;
+      margin: auto;
+      padding: 20px;
+      border: 1px solid #ccc;
+      border-radius: 10px;
+    }
+    
+
+    label {
+      display: block;
+      margin: 10px 0 5px;
+    }
+
+    input[type="submit"], input[type="reset"] {
+      width: 100%;
+      padding: 10px;
+      margin-top: 10px;
+      cursor: pointer;
+      background: linear-gradient(45deg, #0D47A1, #64B5F6); /* تدرج لوني للأزرار */
+      color: white;
+      border: none;
+      border-radius: 5px;
+      font-size: 16px;
+      transition: background 0.3s;
+    }
+
+    input[type="submit"]:hover, input[type="reset"]:hover {
+      background: linear-gradient(45deg, #1565C0, #90CAF9); /* تأثير أخف عند التمرير */
+    }
+</style>
+</head>
+
+<body>
+  <a class="button" target="_blank" href="Mido.html">Home</a>
+  <a class="button" target="_blank" href="Mody.html">Login</a>
+  <a class="button" target="_blank" href="Contact me.html">Contact me</a>
+
+  <div id="header">
+    <h1>Form Elements</h1>
+  </div>
+
+  <div id="form">
+    <h2>Application Form</h2>
+    <form action="submit_form.php" method="get" onsubmit="return validatePasswords()">
+      <label for="name">*Name:</label>
+      <input type="text" id="name" placeholder="ex: Ahmed reda El Khalafy" required minlength="3" name="name">
+
+      <label for="email">*Email:</label>
+      <input type="email" id="email" placeholder="ex: example@gmail.com" required name="email">
+
+      <label for="phone">*Phone:</label>
+      <input type="tel" id="phone" placeholder="+201111111111" required minlength="11" maxlength="13" name="phone" pattern="\+20\d{10}">
+
+      <label for="age">*Age:</label>
+      <input type="number" id="age" placeholder="ex: 20" required min="17" max="35" name="age">
+
+      <label for="password">*Password:</label>
+      <input type="password" id="password" placeholder="ex: **********" required minlength="8" name="password">
+
+      <label for="confirm_password">*Confirm Password:</label>
+      <input type="password" id="confirm_password" placeholder="ex: **********" required minlength="8" name="confirm_password">
+
+      <label for="starting_date">*Starting date:</label>
+      <input type="date" id="starting_date" required name="starting_date">
+
+      <label for="expected_salary">*Expected salary:</label>
+      <input type="range" id="expected_salary" required min="10000" max="15000" step="500" value="12500" name="expected_salary">
+
+      <h5>Available time per day</h5>
+      <label for="start_time">*Start:</label>
+      <input type="time" id="start_time" required name="start">
+
+      <label for="end_time">*End:</label>
+      <input type="time" id="end_time" required name="end">
+
+      <label for="favorite_color">Favorite Color:</label>
+      <input type="color" id="favorite_color" name="favorite_color">
+
+      <input type="submit" value="Apply Now">
+      <input type="reset" value="Clear">
+    </form>
+  </div>
+  
+    <script>
+    // دالة التحقق من تطابق كلمة المرور
+    function validatePasswords() {
+      const password = document.getElementById("password").value;
+      const confirmPassword = document.getElementById("confirm_password").value;
+      if (password !== confirmPassword) {
+        alert("Passwords do not match.");
+        return false;
+      }
+      return true;
+    }
+  </script>
+</body>
+
+</html>

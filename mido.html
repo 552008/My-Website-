@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Project | Ahmed Reda El Khalafy</title>
+  <link rel="icon" href="html.ico" width="32" height="32">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    /* إعدادات عامة للصفحة */
+    body {
+      font-family: 'Roboto', Arial, sans-serif;
+      line-height: 1.6;
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(135deg, #e0e7ff, #f0f2f5);
+      color: #333;
+    }
+
+    /* إعدادات ترويسة الصفحة */
+    header {
+      background: linear-gradient(90deg, #1f2937 0%, #3b82f6 100%);
+      color: #f3f4f6;
+      padding: 1.5em 0;
+      text-align: center;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      transition: background 0.3s ease;
+    }
+
+    header:hover {
+      background: linear-gradient(90deg, #3b82f6 0%, #1f2937 100%);
+    }
+
+    /* إعدادات القائمة */
+    nav ul {
+      list-style-type: none;
+      padding: 0;
+      text-align: center;
+      margin: 0;
+    }
+
+    nav ul li {
+      display: inline-block;
+      margin: 0 15px;
+    }
+
+    nav ul li a {
+      color: #f3f4f6;
+      text-decoration: none;
+      font-size: 1.1em;
+      transition: color 0.3s ease, transform 0.3s ease;
+    }
+
+    nav ul li a:hover {
+      color: #60a5fa;
+      transform: scale(1.1);
+    }
+
+    /* إعدادات العناوين */
+    h1,
+    h2 {
+      color: #1f2937;
+      text-align: center;
+      text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2);
+    }
+
+    h1 {
+      font-size: 2.7em;
+      margin: 0.5em 0;
+    }
+
+    h2 {
+      font-size: 2.1em;
+      margin: 1em 0;
+    }
+
+    /* إعدادات الفقرات */
+    p {
+      margin: 0 0 1em;
+      text-align: center;
+      color: #4b5563;
+      transition: color 0.3s ease;
+    }
+
+    p:hover {
+      color: #3b82f6;
+    }
+
+    /* إعدادات الأزرار */
+    a.button {
+      display: inline-block;
+      padding: 12px 24px;
+      background: linear-gradient(90deg, #3b82f6 0%, #2563eb 100%);
+      color: #fff;
+      border-radius: 8px;
+      margin: 10px 0;
+      transition: background-color 0.3s ease, transform 0.2s ease;
+      text-transform: uppercase;
+      font-weight: bold;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    a.button:hover {
+      background: linear-gradient(90deg, #2563eb 0%, #3b82f6 100%);
+      transform: translateY(-3px) scale(1.05);
+    }
+
+    /* إعدادات الأقسام */
+    .section {
+      padding: 30px;
+      margin: 20px auto;
+      max-width: 850px;
+      background: rgba(255, 255, 255, 0.8);
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+      border-radius: 12px;
+      backdrop-filter: blur(5px);
+      border: 1px solid rgba(0, 0, 0, 0.1);
+      transition: box-shadow 0.3s ease;
+    }
+
+    .section:hover {
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    }
+
+    /* تنسيق للصور */
+    img {
+      display: block;
+      margin: 20px auto;
+      border-radius: 12px;
+      width: 80%;
+      max-width: 300px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    img:hover {
+      transform: scale(1.05);
+      box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+    }
+
+    /* إعدادات تذييل الصفحة */
+    footer {
+      text-align: center;
+      padding: 20px 0;
+      background: linear-gradient(90deg, #1f2937, #3b82f6);
+      color: #f3f4f6;
+      font-size: 0.9em;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+
+  <img src="html.png" width="150" alt="HTML">
+
+  <div class="section">
+    <h1>
+      <ins>
+        <big>A</big>hmed <big>R</big>eda El Khalafy
+      </ins>
+    </h1>
+    <a class="button" target="_blank" href="CV_file.pdf">Download CV</a>
+    <a class="button" target="_blank" href="Contact me.html">Contact me</a>
+    <a class="button" target="_blank" href="Jop.html">Application Form</a>
+    <a class="button" target="_blank" href="Mody.html">Login</a>
+    <a class="button" target="_blank" href="https://www.facebook.com/profile.php?id=100088340812525&mibextid=ZbWKwL">Facebook</a>
+    <p>
+      <b>Welcome to my portfolio!</b>
+      <br>
+      I'm a passionate <strong>Full-Stack web developer</strong> with a love for crafting digital experiences. My goal is to create <em>beautiful and functional websites </em>that leave a lastin impact.
+
+    </p>
+  </div>
+  <hr>
+  <h2>About</h2>
+  <p>
+    I'm a dedicated web developer with a keen eye for detail and a commitment to excellance. My Journey in web development
+    begin with a fascinating for technology, and I've since honed my skills to become proficient in both frent-end and
+    back-end development. I thrive on challenge, love to learn, and continously seek innovative solutions to complex
+    proplems.
+  </p>
+  <!-- End of About Section-->
+
+  <hr>
+
+  <hr>
+
+  <!-- Beginning of Skills Section -->
+
+  <h2>
+
+    <mark>Skills</mark>
+  </h2>
+  <p>
+
+    <img src="img.jpeg" width="25" alt="Sills" <b>My skill</b> set encomasses a wide array of tools and technologies, including proficiency in <strong>HTML, CSS, Javascript</strong>, and
+    expertise in framoworks like React and Node. Ss. I'm also well-versed in detabase management, API development, and
+    responsive web design. There skills allow me to create samleis and interactive web applications.
+  </p>
+
+  <ul>
+    <li>
+      Skills
+      <ol>
+        <li>
+          Technical Skills
+          <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+
+          </ul>
+        </li>
+        <li>
+          Non-Technical Skills
+          <ul>
+            <li>Presintation</li>
+            <li>Leadership</li>
+            <li>Communications</li>
+
+          </ul>
+        </li>
+      </ol>
+    </li>
+  </ul>
+
+
+  <!-- End of Skills Section -->
+
+  <hr>
+
+  <!-- Beginning of Certificates and Courses Section -->
+  <h2>Certificates and Courses</h2>
+  <p>
+    I'm a fire boliever in continuous learning. I have completed several relevant course and earned certification, such as
+    [List your certificates/courses], to stay up-to-date with the iatest industry trands and maintain a high standard of
+    expertise.
+  </p>
+  <!-- End of Certificates and Courses Section -->
+
+  <!-- Beginning of Projects Section -->
+  <h2>Projects</h2>
+  <p>
+    My portfolio showcases a selection of projects that highlight my development capabilities. Each project reflects a
+    unique challenge I've overcome, demonstrating my ability to build user-friendly websites, web applications, and
+    e-comnerce platforms.
+  </p>
+  <!-- End of Projects Section -->
+
+  <!-- Beginning of Services Section -->
+  <h2>Services</h2>
+  <p>
+    I offer a range of development services tailored to meet your specific needs. Whether you require a new website,
+    enhancement to an existing one, or custom web applications, I can provide cost-effective and efficientsolutions. Let's
+    collaborate to bring your version to life.
+  </p>
+  <!-- End of Services Section -->
+
+  <!-- Beginning of Technologies Section -->
+  <h2>Technologies</h2>
+  <p>
+    My work is powered by a broad range of technologies, including but not limited to HTML5, CSS3,JavaScript, React, Redux,
+    Node. Is. Express, MongoOB, and MySQL. I stay up-to-date with the latest trands and omerging technologies to ensure your
+    project is built with the most cutting-edge tools available.
+  </p>
+  <!-- End of Technologies Section -->
+
+  <!-- Beginning of Contact Section -->
+  <h2>Contact me</h2>
+  <p>
+    I'm excited to connect with you! If you have a project in mind, questions, or simply want to discuss web development,
+    please feel free to reach out. You can contact me me via email [aelkhalafy@gmail.com] or through the contact form on this website.
+    Let's start the conversation about how I can assist you in achieving your web development goals.
+  </p>
+
+  <footer>
+    Copyright &copy; 2024 Ahmed Reda El Khalafy
+  </footer>
+   <script>
+        // رسالة ترحيب عند تحميل الصفحة
+        window.onload = function() {
+            alert("مرحباً بكم في موقع أحمد رضا الخلافي!");
+        };
+
+        // تغيير لون الخلفية عند التمرير
+        window.addEventListener("scroll", function() {
+            const header = document.querySelector("header");
+            if (window.scrollY > 50) {
+                header.style.background = "linear-gradient(90deg, #3b82f6, #1f2937)";
+        }
+</body>
+
+</html>

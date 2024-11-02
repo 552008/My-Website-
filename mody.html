@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+  <link rel="icon" href="html.ico" width="32" height="32">
+
+    <style>
+        body {
+            background-color: white; /* لون الخلفية أبيض */
+            color: black; /* لون النص أسود */
+            font-family: Arial, sans-serif; /* اختيار خط مناسب */
+        }
+
+        h1, h2 {
+            color: black; /* لون العناوين أسود */
+        }
+
+        .button {
+            background: linear-gradient(45deg, #003366, #66b2ff); /* تدرج من الأزرق الداكن إلى الأزرق الفاتح */
+            color: white; /* لون النص أبيض */
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-right: 5px;
+            display: inline-block;
+            border: none;
+        }
+
+        .button:hover {
+            background: linear-gradient(45deg, #66b2ff, #003366); /* عكس التدرج عند التمرير */
+        }
+
+        #form {
+            max-width: 400px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f9f9f9;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+
+        input, select {
+            width: 100%;
+            padding: 10px;
+            margin: 8px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+
+        button {
+            background: linear-gradient(45deg, #003366, #66b2ff); /* تدرج من الأزرق الداكن إلى الأزرق الفاتح */
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: linear-gradient(45deg, #66b2ff, #003366); /* عكس التدرج عند التمرير */
+        }
+    </style>
+</head>
+<body>
+    <a class="button" target="_blank" href="Mido.html">Home</a>
+    <a class="button" target="_blank" href="Jop.html">Application Form</a>
+    <br><br>
+    <a class="button" target="_blank" href="Contact me.html">Contact me</a>
+
+    <div id="header">
+        <h1>Form Elements</h1>
+    </div>
+
+    <div id="form">
+        <h2>Register Form</h2>
+        <form action="" method="get">
+            <label>*Name:
+                <input type="text" name="name" placeholder="ex: Ahmed" required minlength="3">
+            </label>
+
+            <label>*Email:
+                <input type="email" name="email" placeholder="ex: example@gmail.com" required>
+            </label>
+
+            <label>*Age:
+                <input type="number" name="age" placeholder="ex: 17" required min="17" max="35">
+            </label>
+
+            <label>*Phone:
+                <input type="tel" name="phone" placeholder="ex: +201111111111" required minlength="11" maxlength="13">
+            </label>
+
+            <label>Select your gender:
+                <select name="gender" required>
+                    <option disabled selected>Select your gender</option>
+                    <option value="Male">Male</option>
+                    <option value="Female">Female</option>
+                    <option value="Not assigned">Not assigned</option>
+                </select>
+            </label>
+
+            <label>Notes:
+                <input type="text" name="note" placeholder="notes">
+            </label>
+
+            <button type="submit">Send Data</button>
+            <button type="reset">Clear Data</button>
+        </form>
+    </div>
+</body>
+</html>
